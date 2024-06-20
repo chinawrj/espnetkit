@@ -1,0 +1,39 @@
+dependencies:
+  cmd_system:
+    component_hash: null
+    source:
+      path: /Users/rjwang/esp/esp-idf/examples/system/console/advanced/components/cmd_system
+      type: local
+    version: '*'
+  esp-qa/ping-cmd:
+    component_hash: 1cec883d3fb4dd22fbbe1916528d3e322c0bf2497ec13ddecb36c3dd783f766a
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.0.1
+  esp-qa/wifi-cmd:
+    component_hash: 4852b46b8b685a568c7bcb6ac0eab283d61742eedfe334f1d2a04b26d6ad6d92
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.1.4
+  espressif/iperf:
+    component_hash: 2eb3fb408154a0b5974876242264b263d46537d1c2d22b7ffa9de9e284f09978
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.1.2
+  espressif/iperf-cmd:
+    component_hash: c8f42e2760640a03121522476f45028088709d1407886700baefd6c70f7ea39d
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.1.2
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.4.0
+manifest_hash: bd754e4452f6591587a6eee3cb15f66d379aa307e128cad8243c387ec406c602
+target: esp32s3
+version: 1.0.0
