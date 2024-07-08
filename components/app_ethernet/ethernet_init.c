@@ -126,7 +126,7 @@ static esp_err_t spi_bus_init(void)
     ret = gpio_install_isr_service(0);
     if (ret != ESP_OK) {
         if (ret == ESP_ERR_INVALID_STATE) {
-            ESP_LOGW(TAG, "GPIO ISR handler has been already installed");
+            ESP_LOGI(TAG, "GPIO ISR handler has been already installed");
             ret = ESP_OK; // ISR handler has been already installed so no issues
         } else {
             ESP_LOGE(TAG, "GPIO ISR handler install failed");

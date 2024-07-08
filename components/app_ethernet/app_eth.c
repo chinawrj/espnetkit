@@ -36,6 +36,7 @@ static void eth_event_handler(void *arg, esp_event_base_t event_base,
         break;
     case ETHERNET_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "Ethernet Link Down");
+        my_eth_info.is_up = 0;
         break;
     case ETHERNET_EVENT_START:
         ESP_LOGI(TAG, "Ethernet Started");
@@ -63,6 +64,7 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
     ESP_LOGI(TAG, "~~~~~~~~~~~");
     sprintf(my_eth_info.ip_string, "%d.%d.%d.%d",IP2STR(&event->ip_info.ip));
     my_eth_info.flag = 1;
+    my_eth_info.is_up = 1;
 }
 
 void app_eth(void)

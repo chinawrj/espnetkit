@@ -12,6 +12,7 @@ typedef struct {
     char flag;
     char first;
     char ip_string[64];
+    int is_up;
 } MY_ETH_INFO;
 
 void app_eth(void);
