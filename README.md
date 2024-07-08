@@ -8,13 +8,6 @@ This project is a multi-page network status interface for WireGuard, Ethernet, a
 - **Ethernet Status**: Shows connection status, IP address, and detailed Ethernet statistics.
 - **Wi-Fi Status**: Provides Wi-Fi connection details, signal strength, and network information.
 
-## Technology Stack
-
-- **ESP32-IDF**: The development framework used for this project.
-- **GUI-BUILDER**: Tool used for designing and implementing the user interface.
-- **FreeRTOS**: Real-time operating system utilized for task management.
-- **GDB**: Debugger used for troubleshooting and fixing crashes.
-
 ## Getting Started
 
 ### Prerequisites
@@ -22,7 +15,6 @@ This project is a multi-page network status interface for WireGuard, Ethernet, a
 - **ESP32 Development Board**
 - **GUI-BUILDER Software**
 - **ESP32-IDF Development Environment**
-- **BLE and UART Modules (optional for specific features)**
 
 ### Installation
 
@@ -48,6 +40,15 @@ This project is a multi-page network status interface for WireGuard, Ethernet, a
 ## Usage
 
 Once flashed, the device will start displaying network status information on the connected display. Use the buttons to navigate between the WireGuard, Ethernet, and Wi-Fi status pages.
+
+## Screenshots
+
+Screenshots of the UI can be found in the `docs` directory of this repository. Below are some examples:
+
+![Main Interface](docs/ui_main.png)
+![WireGuard Status](docs/ui_wireguard.png)
+![Ethernet Status](docs/ui_ethernet.png)
+![Wi-Fi Status](docs/ui_wifi.png)
 
 ## Contributing
 
